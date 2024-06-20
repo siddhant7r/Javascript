@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button id="len" onclick="len()">Enter Length</button>
+<button id="bre" onclick="bre()">Enter Breadth</button>
+<input type="text" id="area">
+ 
+
+<script>
+
+    function len(){   
+    let le=document.getElementById("len")
+    le.parseInt(prompt("type here"))
+    } 
+
+    function bre(){
+    let br=document.getElementById("bre")
+    br.parseInt(prompt("type here"))
+    }
+
+
+ 
+    let area=2*(le+br)
+
+    ar=document.getElementById("area").value
+
+  //  let ar=document.getElementById("area").value
+   // document.write(area)
+
+
+</script>
+</body>
+</html>

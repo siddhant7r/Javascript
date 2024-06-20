@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <form action="" onsubmit="return validate()">
+        <label for="">Name</label>
+        <input type="text" id="name"> <br>
+        <label for="">Contact</label>
+        <input type="text" id="co"> <br>
+        <label for="">Age</label>
+        <input type="text" id="age"> <br>
+        <label for="">Email</label>
+        <input type="text" id="email"><br>
+        <label for="">Pass</label>
+        <input type="text" id="pass"> <br>
+        <label for="">Confirm Password</label>
+        <input type="text" id="cpass"><br>
+        <input type="submit">
+    </form>
+
+
+ <script>
+    function validate(){
+        let na=document.getElementById("name").value
+        let co=document.getElementById("co").value
+        let age=document.getElementById("age").value
+        let em=document.getElementById("email").value
+        let pass=document.getElementById("pass").value
+        let cpass=document.getElementById("cpass").value
+
+        if(na==""){
+            alert("Please enter the name")
+                document.getElementById("name").focus()
+            return false
+        }
+        else if(co==""){
+            alert("Please enter the number")
+                document.getElementById("contact").focus()
+            return false
+        }
+        else if(co.length!=10){
+            alert("Phone no should be of 10 digits")
+            document.getElementById("contact").focus()
+            return false
+        }
+        else if(isNaN(age)){
+            alert("Age should be a number")
+            document.getElementById("age").focus()
+            return false
+        }
+        else if(!(em.includes('@'))){
+            alert("Email should contain @")
+            document.getElementById("email").focus()
+            return false    
+        }
+
+
+    }
+ </script>   
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <form action="" onsubmit="bmi(); return false ">
+    <label for="">Height</label>
+    <input type="number" id="height">
+    <label for="">Weight</label>
+    <input type="number" id="weight">
+    <button onclick="bmi()">Submit</button>
+
+
+  </form>  
+
+  <h3 id="an"></h3>
+ <script>
+
+
+    function bmi(){
+
+     let height=parseFloat(document.getElementById("height").value)
+
+     let weight=parseFloat( document.getElementById("weight").value)
+   
+    let bmi1=parseFloat(weight/(height*2))
+
+    //document.write(bmi1)
+    
+    let an=document.getElementById("an")
+    //an.innerHTML=bmi1
+    if(bmi1<18.5){
+        alert("Underweight")
+    }
+    else if(bmi1>=18.5 || bmi1<=24.9){
+    alert("Healthy Weight")
+    }
+    else if(bmi1>=25 || bmi1<=29.9){
+    alert("Heavy Weight")
+    }
+    else 
+{
+    alert("Obesity")
+}
+    }
+
+
+   
+    
+
+ </script>   
+</body>
+</html>
