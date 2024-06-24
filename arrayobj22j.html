@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ar=[{namee:"Siddant", age:102,location:"Charimli"},{namee:"Priyans", age:122,location:"Neelbad"},
+        {namee:"Rohan", age:101,location:"New Market"}]
+
+        // console.log(ar[0].namee)
+        // ar.push(5)
+        // ar.pop(1)
+        // ar.shift(1)
+        // console.log(ar)
+    
+        let u= ar.map((i)=>{ return i.namee})
+
+        let s=ar.map((j)=> {return j.age})
+
+        // console.log(u)
+        // console.log(i)
+
+        let out = ar.filter((e)=>{return e.age>100 && e.age<105})
+
+        console.log(out)
+    
+    </script>
+</body>
+</html>

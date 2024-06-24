@@ -21,12 +21,7 @@ function validate(){
         return false
     }
 
-    //  if(co<=999999999 || co>=10000000000){
-    //      alert("only 10 Digit no are allowed")
-    //      document.getElementById("contact").focus()
-    //      return false
-    //  }
-
+   
     else if(co.length!=10){
         alert("Only 10 digits is required")
         document.getElementById("contact").focus()
@@ -57,4 +52,11 @@ function validate(){
             return false
         }
         
-}
+} 
+
+
+//  if(co<=999999999 || co>=10000000000){
+    //      alert("only 10 Digit no are allowed")
+    //      document.getElementById("contact").focus()
+    //      return false
+    //  }
