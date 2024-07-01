@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* your styles go here */
+
+        .m2{
+            display: flex;
+        }
+        .cart{
+            position: relative;
+            padding-right: 300px;
+        }
+        .m1{
+            display: flex;
+        }
+        
+    </style>
+</head>
+<body>
+    
+<div class="m2">   
+
+    <div>
+<img src="one.png" alt="" height="400px" width="400px">
+<h3>Price:10000</h3>
+<h3>Offer Price</h3>
+<h4 id="offer">500</h4>
+
+</div>
+
+<div class="cart">
+    <h2 id="add1">0</h2>
+</div>
+
+</div> 
+<div class="m1">
+    <button onclick="decrement(),cartdec()">-</button>
+    <h4 id="add">0</h4>
+    <button onclick="increment(),cartinc(),offerinc()">+</button>
+</div>
+<button id="buy">Buy Now</button>
+
+
+ <script>
+let b=0
+let ci=0
+
+    
+function increment(){
+    
+    let a=document.getElementById("add")
+    
+    a.innerHTML=++b
+}
+function offerinc(){let ofp=500
+    let of=document.getElementById("offer")
+    of.innerHTML=ofp+500
+}
+
+function decrement(){
+
+    let d=document.getElementById("add")
+    if(b>0)
+    d.innerHTML=--b
+}
+
+function cartinc(){
+    let ca=document.getElementById("add1")
+
+    ca.innerHTML=++ci
+}
+
+function cartdec(){
+    let cd=document.getElementById("add1")
+    if(ci>0)
+    cd.innerHTML=--ci
+}
+
+
+ </script>   
+</body>
+</html>
