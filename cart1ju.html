@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
     <style>
         /* your styles go here */
@@ -14,11 +15,20 @@
             position: relative;
             padding-right: 300px;
         }
+        .cart i{
+            position: relative;
+            bottom: 20px;
+            right: 2px;
+        }
         .m1{
             display: flex;
         }
+        .m1 button{
+            margin: 20px;
+        }
         
     </style>
+
 </head>
 <body>
     
@@ -34,6 +44,7 @@
 
 <div class="cart">
     <h2 id="add1">0</h2>
+    <i class="fa-solid fa-cart-shopping"></i>
 </div>
 
 </div> 
@@ -48,26 +59,34 @@
  <script>
 let b=0
 let ci=0
-
+ let ofp=500
     
 function increment(){
     
     let a=document.getElementById("add")
     
     a.innerHTML=++b
+    let off=document.getElementById("offer")
+    off.innerHTML=b*500
 }
-function offerinc(){let ofp=500
-    let of=document.getElementById("offer")
-    of.innerHTML=ofp+500
-}
+
 
 function decrement(){
 
     let d=document.getElementById("add")
     if(b>0)
     d.innerHTML=--b
-}
 
+    
+    
+    
+}
+// function offerinc(){
+// //    let ofp=parseInt(500)
+// //    parseInt( ofp)=ofp+500
+//     let of=document.getElementById("offer")
+//     of.innerHTML= ofp*b
+// }
 function cartinc(){
     let ca=document.getElementById("add1")
 
