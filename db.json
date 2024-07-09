@@ -1,16 +1,19 @@
 {
-    "student":[
+  "student": [
     {
-        "id":1,
-        "name":"Rohan",
-        "city":"Bhopal"
-        
+      "id": "1",
+      "name": "Rohan",
+      "city": "Bhopal"
     },
     {
-        "id":2,
-        "name":"Aaditya",
-        "city":"Indore"
-        
-    }]
-
+      "id": "2",
+      "name": "Aaditya",
+      "city": "Indore"
+    },
+    {
+      "id": "3",
+      "name": "Siddhant Raj",
+      "city": "Bhopal"
+    }
+  ]
 }
