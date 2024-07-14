@@ -2,18 +2,13 @@
   "student": [
     {
       "id": "1",
-      "name": "Rohan",
-      "city": "Bhopal"
+      "name": "Shubham Yagnik",
+      "city": "Pune"
     },
     {
       "id": "2",
-      "name": "Aaditya",
-      "city": "Indore"
-    },
-    {
-      "id": "3",
-      "name": "Siddhant Raj",
-      "city": "Bhopal"
+      "name": "Shreya Tiwari",
+      "city": "Pune"
     }
   ]
 }
